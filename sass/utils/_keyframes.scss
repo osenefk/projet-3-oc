@@ -1,0 +1,75 @@
+/*ANIMATION KEYFRAMES*/
+
+
+/* animation du coeur */
+
+@keyframes heart-grow {
+    0% {
+        transform: scale(0);
+    }
+    7% {
+        transform: scale(0.34);
+    }
+    24% {
+        transform: scale(0.48);
+    }
+    34% {
+        transform: scale(0.62);
+    }
+    57% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* disparition du loader */
+
+@keyframes hide-loader {
+    0% {
+        opacity: 1;
+        z-index: 3;
+    }
+    80% {
+        opacity: 1;
+        z-index: 3;
+    }
+    100% {
+        opacity: 0;
+        z-index: -2;
+    }
+}
+
+
+/* animation du spinner */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* animation du menu */
+
+@keyframes anim-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    35% {
+        opacity: 0;
+    }
+    90% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

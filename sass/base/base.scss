@@ -1,0 +1,200 @@
+/* STYLE PAR DEFAULT */
+
+@import "../utils/_mixins.scss";
+@import "../utils/_var.scss";
+@import "../utils/_keyframes.scss";
+@import "../components/_button.scss";
+@import "../components/_coeur.scss";
+
+/*Ajout des polices Roboto et Shrikhand*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+
+/* BLOCKS*/
+
+
+/* Blocs principaux */
+
+body {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /*colors */
+    @include back-light;
+    /*text */
+    font-family: "Roboto", sans-serif;
+    /* bloc parameters*/
+    margin: 0%;
+    min-width: 280px;
+    /*position*/
+    z-index: 0;
+}
+
+header {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /*bloc parameters*/
+    width: 100%;
+    padding: 15px 0% 15px 0%;
+    /*position*/
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    /*colors parameters*/
+    @include back-light;
+    @include shadow;
+}
+
+main {
+    flex-direction: column;
+    /*flex*/
+}
+
+footer {
+    flex-direction: column;
+    /*flex*/
+    @include footer-bg-color;
+    /*color*/
+    min-height: 105.95px;
+    /*flex*/
+}
+
+
+/*Pied de page*/
+
+.header {
+    &__logo {
+        width: 179px;
+        /*flex*/
+        /*image parameters*/
+        object-fit: cover;
+    }
+    &__arrow {
+        /*text*/
+        font-style: normal;
+        font-size: 24px;
+        /*position*/
+        position: absolute;
+        left: 7%;
+        top: 17px;
+        &:hover {
+            color: $tertiary-color;
+            /*color*/
+        }
+    }
+}
+
+
+/* Enlever la fleche*/
+
+#no_arrow {
+    display: none;
+    /*bloc inactif*/
+}
+
+
+/* Pied de page*/
+
+.footer {
+    /* Cadrage des blocs */
+    &__framing {
+        padding: 7%;
+        /*bloc*/
+    }
+    &__logo {
+        width: 166px;
+        /*bloc*/
+    }
+    &__li {
+        font-size: 15px;
+        /*text*/
+        color: white;
+        /*colors*/
+    }
+    &--icon {
+        /*bloc parameters*/
+        margin-right: 10px;
+        width: 15px;
+    }
+}
+
+
+/* PSEUDO-ELEMENTS */
+
+a {
+    text-decoration: none;
+    /*text*/
+    color: black;
+    /*colors*/
+    width: fit-content;
+    /*bloc*/
+}
+
+ul,
+ol {
+    list-style-type: none;
+    /*flex */
+    padding: 0%;
+    /*bloc*/
+}
+
+button {
+    border: none;
+    /*bloc*/
+}
+
+h1 {
+    font-size: 22px;
+    /*text*/
+}
+
+
+/* RESPONSIVE*/
+
+@media all and (min-width: 768px) {
+    #header {
+        &__logo {
+            width: 268px;
+            /*bloc*/
+        }
+        &__arrow {
+            /*text*/
+            font-style: normal;
+            font-size: 36px;
+        }
+    }
+    .footer {
+        &__framing {
+            /*flex parameters*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*bloc parameters*/
+            padding: 7%;
+        }
+        &__logo {
+            width: 208px;
+        }
+        &__ul {
+            /*flex parameters*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /*bloc parameters*/
+            width: 100%;
+            margin: 5% 0% 5% 0%;
+        }
+        &__li {
+            /*text*/
+            font-size: 19px;
+            text-align: center;
+            /*flex*/
+            width: fit-content;
+        }
+    }
+}

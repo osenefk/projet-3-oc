@@ -1,0 +1,105 @@
+/*ELEMENT : Plat */
+
+@import "../base/base.scss";
+.dish {
+    /* flex parameters */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* bloc parameters */
+    width: 100%;
+    height: $plate_height;
+    margin-top: $plate_margin;
+    margin-bottom: $plate_margin;
+    border-radius: $plate_border;
+    /*position*/
+    position: relative;
+    overflow: hidden;
+    /*color*/
+    @include back-light;
+    @include shadow;
+    /* Bloc du Texte */
+    &__text {
+        /*flex parameters*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* bloc parameters */
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+        margin: 0 auto;
+        &--line {
+            /* bloc parameters */
+            line-height: 21px;
+            max-height: 21px;
+            margin: 0px 60px 0px 5%;
+            width: auto;
+            /* text properties */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            /* animation*/
+            transition: margin-right 1000ms ease-in-out;
+        }
+    }
+    /* Bloc du Prix */
+    &__price {
+        /* flex parameters */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        /*position*/
+        position: absolute;
+        right: -60px;
+        /* animation*/
+        transition: transform 1000ms ease-in-out;
+        &--numb {
+            /* bloc */
+            padding: 0px 15px 0px 15px;
+            width: 30px;
+            position: relative;
+            bottom: -16px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        &--check {
+            /* flex parameters */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* bloc parameters */
+            font-size: 20px;
+            padding: 0px 20px 0px 20px;
+            height: $plate_height;
+            width: 20px;
+            /* colors */
+            @include tertiary-bg-color;
+            color: $light-grey;
+            &--icon {
+                transition: transform 1000ms ease-in-out;
+                /* animation*/
+            }
+        }
+    }
+    /* ANIMATION */
+    &:hover {
+        & .dish {
+            &__text--line {
+                margin-right: 120px;
+                /* bloc parameters */
+            }
+            &__price {
+                transform: translateX(-60px);
+                /* animation */
+                &--check--icon {
+                    transform: rotate(-360deg);
+                    /* animation */
+                }
+            }
+        }
+    }
+}

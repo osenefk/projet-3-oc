@@ -1,0 +1,902 @@
+/*PAGE D'ACCEUIL*/ /* STYLE PAR DEFAULT */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*ELEMENT : Boutton */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.btn {
+  /*color parameters*/
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  box-shadow: 0px 5px 10px #858585;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  /* text parameters */
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 17px;
+  /*bloc parameters*/
+  padding: 20px;
+  margin: 20px 20px 55px 20px;
+  border-radius: 60px;
+  /*position*/
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: ""; /* contenu de l'after*/
+  /*colors parameters*/
+  background: linear-gradient(to right bottom, #ff88de, #9b63df);
+  box-shadow: 0px 5px 10px #393939;
+  color: #eaeaea;
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  /*bloc parameters*/
+  border-radius: 60px;
+  /*animation presets*/
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+/*ELEMENT : Coeur */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.heart {
+  font-size: 25px;
+  /* Conteneur de l'Animation*/
+  /* Coeur - Vide */
+  /* Coeur - Remplit */
+}
+.heart--bloc {
+  /* bloc */
+  width: 25px;
+  height: 25px;
+  /* Animation */
+}
+.heart--bloc:hover > .heart__empty {
+  /*color change*/
+  color: transparent;
+}
+.heart--bloc:hover .heart__full {
+  color: #9356dc; /*colors change*/
+  text-shadow: 0px 0px 6px rgba(255, 121, 217, 0.5019607843); /*text parameters*/
+  /*animation parameters*/
+  animation: heart-grow 900ms;
+}
+.heart__empty {
+  color: black; /*colors parameters*/
+  /*position*/
+  position: relative;
+  z-index: 0;
+}
+.heart__full {
+  color: transparent; /*colors parameters*/
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*Ajout des polices Roboto et Shrikhand*/
+/* BLOCKS*/
+/* Blocs principaux */
+body {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*colors */
+  background-color: #f2f2f2;
+  /*text */
+  font-family: "Roboto", sans-serif;
+  /* bloc parameters*/
+  margin: 0%;
+  min-width: 280px;
+  /*position*/
+  z-index: 0;
+}
+
+header {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /*bloc parameters*/
+  width: 100%;
+  padding: 15px 0% 15px 0%;
+  /*position*/
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  /*colors parameters*/
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 10px #858585;
+}
+
+main {
+  flex-direction: column;
+  /*flex*/
+}
+
+footer {
+  flex-direction: column;
+  /*flex*/
+  background-color: #39383a;
+  /*color*/
+  min-height: 105.95px;
+  /*flex*/
+}
+
+/*Pied de page*/
+.header__logo {
+  width: 179px;
+  /*flex*/
+  /*image parameters*/
+  object-fit: cover;
+}
+.header__arrow {
+  /*text*/
+  font-style: normal;
+  font-size: 24px;
+  /*position*/
+  position: absolute;
+  left: 7%;
+  top: 17px;
+}
+.header__arrow:hover {
+  color: #99e2d0;
+  /*color*/
+}
+
+/* Enlever la fleche*/
+#no_arrow {
+  display: none;
+  /*bloc inactif*/
+}
+
+/* Pied de page*/
+.footer {
+  /* Cadrage des blocs */
+}
+.footer__framing {
+  padding: 7%;
+  /*bloc*/
+}
+.footer__logo {
+  width: 166px;
+  /*bloc*/
+}
+.footer__li {
+  font-size: 15px;
+  /*text*/
+  color: white;
+  /*colors*/
+}
+.footer--icon {
+  /*bloc parameters*/
+  margin-right: 10px;
+  width: 15px;
+}
+
+/* PSEUDO-ELEMENTS */
+a {
+  text-decoration: none;
+  /*text*/
+  color: black;
+  /*colors*/
+  width: fit-content;
+  /*bloc*/
+}
+
+ul,
+ol {
+  list-style-type: none;
+  /*flex */
+  padding: 0%;
+  /*bloc*/
+}
+
+button {
+  border: none;
+  /*bloc*/
+}
+
+h1 {
+  font-size: 22px;
+  /*text*/
+}
+
+/* RESPONSIVE*/
+@media all and (min-width: 768px) {
+  #header__logo {
+    width: 268px;
+    /*bloc*/
+  }
+  #header__arrow {
+    /*text*/
+    font-style: normal;
+    font-size: 36px;
+  }
+  .footer__framing {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*bloc parameters*/
+    padding: 7%;
+  }
+  .footer__logo {
+    width: 208px;
+  }
+  .footer__ul {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*bloc parameters*/
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+  }
+  .footer__li {
+    /*text*/
+    font-size: 19px;
+    text-align: center;
+    /*flex*/
+    width: fit-content;
+  }
+}
+/*ANIMATION DU LOADER*/ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*SCREEN*/
+.loader {
+  /*colors */
+  background-color: #eaeaea;
+  /*flex parameters*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position parameters*/
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /*animation parameters*/
+  animation: hide-loader 2s 1;
+  animation-fill-mode: forwards;
+}
+
+/*SPINNER*/
+.spinner {
+  /*flex parameters*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*blocs parameters*/
+  height: 175px;
+  width: 175px;
+  border: 8px solid #ff79da;
+  border-radius: 50%;
+  /*position*/
+  position: relative;
+  /*colors */
+  box-shadow: 0px 0px 5px #ff79da;
+  /*Font properties*/
+}
+.spinner:after {
+  content: ""; /* contenu de l'after*/
+  /*bloc parameters*/
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  /*colors */
+  border-top-color: #9356dc;
+  /*position*/
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  /*animation parameters*/
+  animation: spin 2.2s cubic-bezier(0.94, 0.32, 0.25, 0.83) 0s infinite;
+}
+.spinner__text {
+  /*text parameters*/
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  text-align: center;
+  /*colors */
+  text-shadow: 0px 5px 10px #929292;
+}
+
+/* FLEXBOX de la Secion Principale*/
+#localiser {
+  background-color: #dddddd;
+  /* color */
+}
+
+#presentation {
+  background-color: #eaeaea;
+  /* color */
+  justify-content: flex-start;
+  /* flex */
+}
+
+#guide {
+  background-color: #f2f2f2;
+  /* color */
+  padding: 5%;
+  /* bloc */
+}
+
+#restaurants {
+  background-color: #eaeaea;
+  /* color */
+  padding: 5%;
+  /* bloc */
+}
+
+#localiser,
+#presentation {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Centrer et aligner verticalement les blocs */
+}
+
+/* LOCALISATEUR */
+.localiser--button {
+  /* text */
+  font-size: 18px;
+  font-weight: bold;
+  /* color */
+  background-color: #dddddd;
+  /* bloc */
+  padding: 20px;
+}
+
+/* PRESENTATION */
+.presentation--title {
+  /* bloc */
+  width: fit-content;
+  max-width: 60%;
+  /* text */
+  text-align: center;
+}
+.presentation--text {
+  /* bloc */
+  width: fit-content;
+  max-width: 80%;
+  /* text */
+  text-align: center;
+}
+
+/* GUIDE */
+.guide__list {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Centrer et aligner verticalement les blocs */
+  margin: 0%;
+  /* bloc */
+}
+
+.bull {
+  /* bloc parameters */
+  width: 95%;
+  max-width: 320px;
+  border-radius: 23px;
+  margin: 15px 0px 15px 0px;
+  /* colors parameters */
+  background-color: #eaeaea;
+  box-shadow: 0px 5px 10px #858585;
+  /* Color transform */
+}
+.bull:hover {
+  background-color: #efefef;
+  box-shadow: 0px 5px 10px #6c6c6c;
+}
+.bull:hover > .bull--numb {
+  background-color: #1f78ff;
+}
+.bull--numb {
+  /* bloc parameters */
+  padding: 10px 13px 10px 13px;
+  border-radius: 50px;
+  /* colors parameters */
+  background-color: rgb(0, 102, 255);
+  color: #f2f2f2;
+  /* text parameters */
+  font-size: 10px;
+  font-weight: bold;
+  /* position */
+  position: relative;
+  left: -15px;
+}
+.bull--icon {
+  margin: 30px 6% 30px 0px;
+  /*bloc*/
+}
+.bull--text {
+  /*bloc*/
+  width: fit-content;
+  max-width: 200px;
+}
+
+/* PRESENTATIONS DES RESTAURANTS */
+.stores_list {
+  /* flex parameters */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex parameters */
+  min-height: 100px;
+}
+
+/* CARTE - Etablissement */
+.card {
+  /* colors parameters */
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 10px #858585;
+  /* bloc parameters */
+  border-radius: 20px;
+  margin: 3%;
+  width: 100%;
+  max-width: 500px;
+  /* Color transform */
+}
+.card:hover {
+  box-shadow: 0px 5px 10px #525252;
+}
+.card__img {
+  /* image parameters */
+  object-fit: cover;
+  /* bloc parameters */
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__descr {
+  /* flex parameters */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* bloc parameters */
+  padding: 2% 5% 3% 5%;
+}
+.card__descr--text {
+  width: 100%;
+}
+
+/* PSEUDO-ELEMENTS */
+h3 {
+  margin: 0px;
+}
+
+/*RESPONSIVE*/
+@media all and (min-width: 768px) {
+  .localiser--button {
+    font-size: 23px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .guide__list {
+    /* flex parameters */
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* bloc parameters */
+    margin-top: 50px;
+  }
+  .bull {
+    /* flex parameters */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* bloc parameters */
+    height: 130px;
+    width: auto;
+  }
+  .bull--numb {
+    /* flex parameters */
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* text parameters */
+    font-size: 18px;
+    /* position */
+    position: relative;
+    left: 0%;
+    top: -20px;
+    z-index: 1;
+  }
+  .bull--icon {
+    margin: 0px 0px 0px 0px;
+    /* bloc */
+    font-size: 25px;
+    /* position */
+  }
+  .bull--text {
+    /* bloc parameters */
+    width: 205px;
+    max-width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* text parameters */
+    text-align: center;
+  }
+  /* Titres de la page */
+  .page_titles {
+    text-align: center;
+    /*text*/
+  }
+  #guide,
+#restaurants {
+    /* flex parameters */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .guide__list,
+.stores_list {
+    width: 100%;
+    /* bloc*/
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .bull--text {
+    font-size: 16px;
+    /* text*/
+  }
+  .stores_list {
+    /* flex parameters */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    /* bloc parameters */
+    height: 100%;
+    width: 330px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card__img {
+    width: 100%;
+    /* bloc*/
+  }
+}
+@media all and (min-width: 992px) {
+  .guide__list {
+    max-width: 1200px;
+    /* bloc*/
+  }
+  .bull {
+    width: 230px;
+    /* bloc*/
+  }
+  .bull--text {
+    max-width: 200px;
+    /* bloc*/
+    font-size: 18px;
+    /* text*/
+  }
+  .stores_list {
+    /* flex parameters */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card {
+    margin: 1%;
+    /* bloc*/
+  }
+  .card__img {
+    width: 100%;
+    /* bloc*/
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+/*ANIMATION DU LOADER*/
+
+@import "../utils/_mixins.scss";
+@import "../utils/_var.scss";
+@import "../utils/_keyframes.scss";
+
+/*SCREEN*/
+.loader {
+  /*colors */
+  @include back-grey;
+  /*flex parameters*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position parameters*/
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /*animation parameters*/
+  animation: hide-loader 2s 1;
+  animation-fill-mode: forwards;
+}
+
+/*SPINNER*/
+.spinner {
+  /*flex parameters*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*blocs parameters*/
+  height: $loader_size;
+  width: $loader_size;
+  border: 8px solid $secondary-color;
+  border-radius: 50%;
+  /*position*/
+  position: relative;
+  /*colors */
+  box-shadow: 0px 0px 5px $secondary-color;
+
+  &:after {
+    content: ""; /* contenu de l'after*/
+    /*bloc parameters*/
+    height: $loader_size;
+    width: $loader_size;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    /*colors */
+    border-top-color: $primary-color;
+    /*position*/
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    /*animation parameters*/
+    animation: spin 2.2s cubic-bezier(0.94, 0.32, 0.25, 0.83) 0s infinite;
+  }
+
+  /*Font properties*/
+  &__text {
+    /*text parameters*/
+    font-family: "Shrikhand", cursive;
+    font-size: 25px;
+    text-align: center;
+    /*colors */
+    @include loader-text-shadow;
+  }
+}

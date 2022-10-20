@@ -1,0 +1,155 @@
+/*PAGE GENERATRICE DES MENUS*/
+
+@import "../base/base.scss";
+
+/* TITRE DE LA PAGE*/
+
+.title {
+    &--frame {
+        /* bloc parameters */
+        width: 100%;
+        height: 325px;
+    }
+    &__text {
+        /* flex parameters */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* colors */
+        @include back-grey;
+        /* bloc parameters */
+        border-radius: 40px 40px 0px 0px;
+        padding: 0% 10% 0% 10%;
+        /* position */
+        position: relative;
+        bottom: -2px;
+    }
+}
+
+
+/* MISE EN PAGE*/
+
+#menu {
+    /* flex parameters */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#entrees,
+#plats-princip,
+#deserts {
+    /* bloc parameters */
+    width: 90%;
+    max-width: 475px;
+}
+
+.list {
+    /* flex parameters */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* bloc parameters */
+    height: 100%;
+}
+
+
+/* MENU ANIMATION*/
+
+.anim__1,
+.anim__2,
+.anim__3 {
+    /* animation parameters - opacity */
+    opacity: 0;
+    animation-name: anim-menu;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.39, 0.13, 0.53, 1.02);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    /* animation parameters - move */
+    transform: translateY(0px);
+}
+
+
+/* Differred delays */
+
+.anim {
+    &__1 {
+        animation-delay: 600ms;
+    }
+    &__2 {
+        animation-delay: 1200ms;
+    }
+    &__3 {
+        animation-delay: 1800ms;
+    }
+}
+
+
+/* CARTE - Plat */
+
+@import "../components/_dish.scss";
+
+/* PSEUDO-ELEMENTS */
+
+main {
+    @include back-grey;
+    /* colors */
+}
+
+h1 {
+    /* text parameters */
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    font-stretch: expanded;
+}
+
+h3 {
+    font-size: 18px;
+    /* text */
+}
+
+h2 {
+    /* text  */
+    font-weight: normal;
+    /* bloc  */
+    border-bottom: 3px solid $tertiary-color;
+    width: fit-content;
+}
+
+
+/* RESPONSIVE*/
+
+@media all and (min-width: 768px) {
+    .title {
+        &__text {
+            justify-content: space-evenly;
+            /* flex parameters */
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .title {
+        &--frame {
+            height: 450px;
+            /* bloc parameters */
+        }
+        &__text {
+            justify-content: space-evenly;
+            /* flex parameters */
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    .title {
+        &--frame {
+            height: 600px;
+            /* bloc parameters */
+        }
+    }
+}

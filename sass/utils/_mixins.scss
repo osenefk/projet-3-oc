@@ -1,0 +1,52 @@
+/* MIXINS*/
+
+/*couleurs de fond de page*/
+
+@mixin back-grey {
+  background-color: $grey;
+}
+@mixin back-light {
+  background-color: lighten($grey, 3);
+}
+@mixin back-dark {
+  background-color: darken($grey, 5);
+}
+@mixin footer-bg-color {
+  background-color: #39383a;
+}
+
+/*couleur principales utilisees en fond d'element*/
+@mixin primary-bg-color {
+  background-color: #9356dc;
+}
+@mixin secondary-bg-color {
+  background-color: #ff79da;
+}
+@mixin tertiary-bg-color {
+  background-color: #99e2d0;
+}
+
+@mixin numb-bg-color {
+  background-color: rgb(0, 102, 255);
+}
+
+/*Ombres */
+
+@mixin shadow {
+  box-shadow: 0px 3px 10px #858585;
+}
+
+/*loader font shadow*/
+
+@mixin loader-text-shadow {
+  text-shadow: 0px 5px 10px #929292;
+}
+
+/* Centrer et aligner verticalement les blocs */
+@mixin centered_column {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

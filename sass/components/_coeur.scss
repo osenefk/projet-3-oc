@@ -1,0 +1,47 @@
+/*ELEMENT : Coeur */
+
+@import "../utils/_mixins.scss";
+@import "../utils/_var.scss";
+@import "../utils/_keyframes.scss";
+
+.heart {
+  font-size: 25px;
+
+  /* Conteneur de l'Animation*/
+  &--bloc {
+    /* bloc */
+    width: 25px;
+    height: 25px;
+
+    /* Animation */
+    &:hover > .heart__empty {
+      /*color change*/
+      color: transparent;
+    }
+    &:hover .heart__full {
+      color: $primary-color; /*colors change*/
+      text-shadow: 0px 0px 6px #ff79d980; /*text parameters*/
+      /*animation parameters*/
+      animation: heart-grow 900ms;
+    }
+  }
+
+  /* Coeur - Vide */
+  &__empty {
+    color: black; /*colors parameters*/
+    /*position*/
+    position: relative;
+    z-index: 0;
+  }
+  /* Coeur - Remplit */
+  &__full {
+    color: transparent; /*colors parameters*/
+    /*position*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

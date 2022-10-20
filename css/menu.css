@@ -1,0 +1,1172 @@
+/*PAGE GENERATRICE DES MENUS*/ /* STYLE PAR DEFAULT */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*ELEMENT : Boutton */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.btn {
+  /*color parameters*/
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  box-shadow: 0px 5px 10px #858585;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  /* text parameters */
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 17px;
+  /*bloc parameters*/
+  padding: 20px;
+  margin: 20px 20px 55px 20px;
+  border-radius: 60px;
+  /*position*/
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: ""; /* contenu de l'after*/
+  /*colors parameters*/
+  background: linear-gradient(to right bottom, #ff88de, #9b63df);
+  box-shadow: 0px 5px 10px #393939;
+  color: #eaeaea;
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  /*bloc parameters*/
+  border-radius: 60px;
+  /*animation presets*/
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+/*ELEMENT : Coeur */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.heart {
+  font-size: 25px;
+  /* Conteneur de l'Animation*/
+  /* Coeur - Vide */
+  /* Coeur - Remplit */
+}
+.heart--bloc {
+  /* bloc */
+  width: 25px;
+  height: 25px;
+  /* Animation */
+}
+.heart--bloc:hover > .heart__empty {
+  /*color change*/
+  color: transparent;
+}
+.heart--bloc:hover .heart__full {
+  color: #9356dc; /*colors change*/
+  text-shadow: 0px 0px 6px rgba(255, 121, 217, 0.5019607843); /*text parameters*/
+  /*animation parameters*/
+  animation: heart-grow 900ms;
+}
+.heart__empty {
+  color: black; /*colors parameters*/
+  /*position*/
+  position: relative;
+  z-index: 0;
+}
+.heart__full {
+  color: transparent; /*colors parameters*/
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*Ajout des polices Roboto et Shrikhand*/
+/* BLOCKS*/
+/* Blocs principaux */
+body {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*colors */
+  background-color: #f2f2f2;
+  /*text */
+  font-family: "Roboto", sans-serif;
+  /* bloc parameters*/
+  margin: 0%;
+  min-width: 280px;
+  /*position*/
+  z-index: 0;
+}
+
+header {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /*bloc parameters*/
+  width: 100%;
+  padding: 15px 0% 15px 0%;
+  /*position*/
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  /*colors parameters*/
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 10px #858585;
+}
+
+main {
+  flex-direction: column;
+  /*flex*/
+}
+
+footer {
+  flex-direction: column;
+  /*flex*/
+  background-color: #39383a;
+  /*color*/
+  min-height: 105.95px;
+  /*flex*/
+}
+
+/*Pied de page*/
+.header__logo {
+  width: 179px;
+  /*flex*/
+  /*image parameters*/
+  object-fit: cover;
+}
+.header__arrow {
+  /*text*/
+  font-style: normal;
+  font-size: 24px;
+  /*position*/
+  position: absolute;
+  left: 7%;
+  top: 17px;
+}
+.header__arrow:hover {
+  color: #99e2d0;
+  /*color*/
+}
+
+/* Enlever la fleche*/
+#no_arrow {
+  display: none;
+  /*bloc inactif*/
+}
+
+/* Pied de page*/
+.footer {
+  /* Cadrage des blocs */
+}
+.footer__framing {
+  padding: 7%;
+  /*bloc*/
+}
+.footer__logo {
+  width: 166px;
+  /*bloc*/
+}
+.footer__li {
+  font-size: 15px;
+  /*text*/
+  color: white;
+  /*colors*/
+}
+.footer--icon {
+  /*bloc parameters*/
+  margin-right: 10px;
+  width: 15px;
+}
+
+/* PSEUDO-ELEMENTS */
+a {
+  text-decoration: none;
+  /*text*/
+  color: black;
+  /*colors*/
+  width: fit-content;
+  /*bloc*/
+}
+
+ul,
+ol {
+  list-style-type: none;
+  /*flex */
+  padding: 0%;
+  /*bloc*/
+}
+
+button {
+  border: none;
+  /*bloc*/
+}
+
+h1 {
+  font-size: 22px;
+  /*text*/
+}
+
+/* RESPONSIVE*/
+@media all and (min-width: 768px) {
+  #header__logo {
+    width: 268px;
+    /*bloc*/
+  }
+  #header__arrow {
+    /*text*/
+    font-style: normal;
+    font-size: 36px;
+  }
+  .footer__framing {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*bloc parameters*/
+    padding: 7%;
+  }
+  .footer__logo {
+    width: 208px;
+  }
+  .footer__ul {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*bloc parameters*/
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+  }
+  .footer__li {
+    /*text*/
+    font-size: 19px;
+    text-align: center;
+    /*flex*/
+    width: fit-content;
+  }
+}
+/* TITRE DE LA PAGE*/
+.title--frame {
+  /* bloc parameters */
+  width: 100%;
+  height: 325px;
+}
+.title__text {
+  /* flex parameters */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* colors */
+  background-color: #eaeaea;
+  /* bloc parameters */
+  border-radius: 40px 40px 0px 0px;
+  padding: 0% 10% 0% 10%;
+  /* position */
+  position: relative;
+  bottom: -2px;
+}
+
+/* MISE EN PAGE*/
+#menu {
+  /* flex parameters */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#entrees,
+#plats-princip,
+#deserts {
+  /* bloc parameters */
+  width: 90%;
+  max-width: 475px;
+}
+
+.list {
+  /* flex parameters */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* bloc parameters */
+  height: 100%;
+}
+
+/* MENU ANIMATION*/
+.anim__1,
+.anim__2,
+.anim__3 {
+  /* animation parameters - opacity */
+  opacity: 0;
+  animation-name: anim-menu;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.39, 0.13, 0.53, 1.02);
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  /* animation parameters - move */
+  transform: translateY(0px);
+}
+
+/* Differred delays */
+.anim__1 {
+  animation-delay: 600ms;
+}
+.anim__2 {
+  animation-delay: 1200ms;
+}
+.anim__3 {
+  animation-delay: 1800ms;
+}
+
+/* CARTE - Plat */
+/*ELEMENT : Plat */ /* STYLE PAR DEFAULT */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*ELEMENT : Boutton */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.btn {
+  /*color parameters*/
+  background: linear-gradient(to right bottom, #ff79da, #9356dc);
+  box-shadow: 0px 5px 10px #858585;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  /* text parameters */
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 17px;
+  /*bloc parameters*/
+  padding: 20px;
+  margin: 20px 20px 55px 20px;
+  border-radius: 60px;
+  /*position*/
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: ""; /* contenu de l'after*/
+  /*colors parameters*/
+  background: linear-gradient(to right bottom, #ff88de, #9b63df);
+  box-shadow: 0px 5px 10px #393939;
+  color: #eaeaea;
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  /*bloc parameters*/
+  border-radius: 60px;
+  /*animation presets*/
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+/*ELEMENT : Coeur */ /* MIXINS*/
+/*couleurs de fond de page*/
+/*couleur principales utilisees en fond d'element*/
+/*Ombres */
+/*loader font shadow*/
+/* Centrer et aligner verticalement les blocs */
+/* VARIABLES */
+/*Couleurs */
+/* Plate variables*/
+/*Loader spin*/
+/* Carte de presentation*/
+/*ANIMATION KEYFRAMES*/
+/* animation du coeur */
+@keyframes heart-grow {
+  0% {
+    transform: scale(0);
+  }
+  7% {
+    transform: scale(0.34);
+  }
+  24% {
+    transform: scale(0.48);
+  }
+  34% {
+    transform: scale(0.62);
+  }
+  57% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* disparition du loader */
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+/* animation du spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* animation du menu */
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.heart {
+  font-size: 25px;
+  /* Conteneur de l'Animation*/
+  /* Coeur - Vide */
+  /* Coeur - Remplit */
+}
+.heart--bloc {
+  /* bloc */
+  width: 25px;
+  height: 25px;
+  /* Animation */
+}
+.heart--bloc:hover > .heart__empty {
+  /*color change*/
+  color: transparent;
+}
+.heart--bloc:hover .heart__full {
+  color: #9356dc; /*colors change*/
+  text-shadow: 0px 0px 6px rgba(255, 121, 217, 0.5019607843); /*text parameters*/
+  /*animation parameters*/
+  animation: heart-grow 900ms;
+}
+.heart__empty {
+  color: black; /*colors parameters*/
+  /*position*/
+  position: relative;
+  z-index: 0;
+}
+.heart__full {
+  color: transparent; /*colors parameters*/
+  /*position*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*Ajout des polices Roboto et Shrikhand*/
+/* BLOCKS*/
+/* Blocs principaux */
+body {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*colors */
+  background-color: #f2f2f2;
+  /*text */
+  font-family: "Roboto", sans-serif;
+  /* bloc parameters*/
+  margin: 0%;
+  min-width: 280px;
+  /*position*/
+  z-index: 0;
+}
+
+header {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /*bloc parameters*/
+  width: 100%;
+  padding: 15px 0% 15px 0%;
+  /*position*/
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  /*colors parameters*/
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 10px #858585;
+}
+
+main {
+  flex-direction: column;
+  /*flex*/
+}
+
+footer {
+  flex-direction: column;
+  /*flex*/
+  background-color: #39383a;
+  /*color*/
+  min-height: 105.95px;
+  /*flex*/
+}
+
+/*Pied de page*/
+.header__logo {
+  width: 179px;
+  /*flex*/
+  /*image parameters*/
+  object-fit: cover;
+}
+.header__arrow {
+  /*text*/
+  font-style: normal;
+  font-size: 24px;
+  /*position*/
+  position: absolute;
+  left: 7%;
+  top: 17px;
+}
+.header__arrow:hover {
+  color: #99e2d0;
+  /*color*/
+}
+
+/* Enlever la fleche*/
+#no_arrow {
+  display: none;
+  /*bloc inactif*/
+}
+
+/* Pied de page*/
+.footer {
+  /* Cadrage des blocs */
+}
+.footer__framing {
+  padding: 7%;
+  /*bloc*/
+}
+.footer__logo {
+  width: 166px;
+  /*bloc*/
+}
+.footer__li {
+  font-size: 15px;
+  /*text*/
+  color: white;
+  /*colors*/
+}
+.footer--icon {
+  /*bloc parameters*/
+  margin-right: 10px;
+  width: 15px;
+}
+
+/* PSEUDO-ELEMENTS */
+a {
+  text-decoration: none;
+  /*text*/
+  color: black;
+  /*colors*/
+  width: fit-content;
+  /*bloc*/
+}
+
+ul,
+ol {
+  list-style-type: none;
+  /*flex */
+  padding: 0%;
+  /*bloc*/
+}
+
+button {
+  border: none;
+  /*bloc*/
+}
+
+h1 {
+  font-size: 22px;
+  /*text*/
+}
+
+/* RESPONSIVE*/
+@media all and (min-width: 768px) {
+  #header__logo {
+    width: 268px;
+    /*bloc*/
+  }
+  #header__arrow {
+    /*text*/
+    font-style: normal;
+    font-size: 36px;
+  }
+  .footer__framing {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*bloc parameters*/
+    padding: 7%;
+  }
+  .footer__logo {
+    width: 208px;
+  }
+  .footer__ul {
+    /*flex parameters*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*bloc parameters*/
+    width: 100%;
+    margin: 5% 0% 5% 0%;
+  }
+  .footer__li {
+    /*text*/
+    font-size: 19px;
+    text-align: center;
+    /*flex*/
+    width: fit-content;
+  }
+}
+.dish {
+  /* flex parameters */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* bloc parameters */
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  /*position*/
+  position: relative;
+  overflow: hidden;
+  /*color*/
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 10px #858585;
+  /* Bloc du Texte */
+  /* Bloc du Prix */
+  /* ANIMATION */
+}
+.dish__text {
+  /*flex parameters*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* bloc parameters */
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  margin: 0 auto;
+}
+.dish__text--line {
+  /* bloc parameters */
+  line-height: 21px;
+  max-height: 21px;
+  margin: 0px 60px 0px 5%;
+  width: auto;
+  /* text properties */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* animation*/
+  transition: margin-right 1000ms ease-in-out;
+}
+.dish__price {
+  /* flex parameters */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /*position*/
+  position: absolute;
+  right: -60px;
+  /* animation*/
+  transition: transform 1000ms ease-in-out;
+}
+.dish__price--numb {
+  /* bloc */
+  padding: 0px 15px 0px 15px;
+  width: 30px;
+  position: relative;
+  bottom: -16px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.dish__price--check {
+  /* flex parameters */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* bloc parameters */
+  font-size: 20px;
+  padding: 0px 20px 0px 20px;
+  height: 70px;
+  width: 20px;
+  /* colors */
+  background-color: #99e2d0;
+  color: #f2f2f2;
+}
+.dish__price--check--icon {
+  transition: transform 1000ms ease-in-out;
+  /* animation*/
+}
+.dish:hover .dish__text--line {
+  margin-right: 120px;
+  /* bloc parameters */
+}
+.dish:hover .dish__price {
+  transform: translateX(-60px);
+  /* animation */
+}
+.dish:hover .dish__price--check--icon {
+  transform: rotate(-360deg);
+  /* animation */
+}
+
+/* PSEUDO-ELEMENTS */
+main {
+  background-color: #eaeaea;
+  /* colors */
+}
+
+h1 {
+  /* text parameters */
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  font-stretch: expanded;
+}
+
+h3 {
+  font-size: 18px;
+  /* text */
+}
+
+h2 {
+  /* text  */
+  font-weight: normal;
+  /* bloc  */
+  border-bottom: 3px solid #99e2d0;
+  width: fit-content;
+}
+
+/* RESPONSIVE*/
+@media all and (min-width: 768px) {
+  .title__text {
+    justify-content: space-evenly;
+    /* flex parameters */
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .title--frame {
+    height: 450px;
+    /* bloc parameters */
+  }
+  .title__text {
+    justify-content: space-evenly;
+    /* flex parameters */
+  }
+}
+@media all and (min-width: 992px) {
+  .title--frame {
+    height: 600px;
+    /* bloc parameters */
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
